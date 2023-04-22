@@ -5,8 +5,7 @@ const sumAll = function(...args) {
     let sumAll = 0;
     let first = sortedArgs[0];
     let last = sortedArgs.at(-1);
-    var res = args.every(function(element) {return typeof element === 'number';});
-    console.log(res);
+    let res = args.every(function(element) {return typeof element === 'number';});
 
     if (first < 0 || !res) {
         sumAll = "ERROR";
